@@ -8,6 +8,7 @@ import (
 	"net/http"
 )
 
+
 func index(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Handling %+v\n", r);
 	bs, err := ioutil.ReadFile("/content/index.html")
